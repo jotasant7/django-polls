@@ -1,6 +1,6 @@
-  <div>
-      <p><b>código</b> {{ question.id }}</p>
-      <p><b>Título</b> {{ question.question_text }}</p>
-      <p><b>Data de publicação</b> {{ question.pub_date }}</p>
+{% extends "polls/base.html" %}
 
-  </div>
+{% block title%}Detalhes da Enquete{% endblock title %}
+
+{% block content%}
+  <h1> {{question.question_text}}</h1>
