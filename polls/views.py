@@ -36,3 +36,6 @@ class QuestionlistView(ListView):
 class QuestionDetailview(DetailView):
     model = Question
     context_object_name = 'question'
+
+class QuestionDeleteView(DeleteView):
+    model = Questionsuccess_url = reverse_lazy("question-list")
